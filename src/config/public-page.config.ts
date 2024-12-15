@@ -6,11 +6,11 @@ class PublicPage {
 	SEARCH = '/search'
 
 	MY_CHANNEL = '/my-channel'
-	SUBSCRIPTIONS = '/subscription'
+	SUBSCRIPTIONS = '/subscriptions'
 	HISTORY = '/history'
 	LIKED_VIDEOS = '/liked-videos'
 
-	SETTIGS = '/settings'
+	SETTINGS = '/settings'
 	FEEDBACK = '/feedback'
 }
 

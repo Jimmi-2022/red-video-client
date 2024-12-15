@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { type Metadata } from 'next'
 import { Noto_Sans } from 'next/font/google'
 
 import { Layout } from '@/components/layout/Layout'
@@ -9,7 +9,7 @@ const notoSans = Noto_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'RED Video',
-	description: 'Best app for watching videos'
+	description: 'Best app for video watching'
 }
 
 export default function RootLayout({

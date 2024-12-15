@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import type { ISidebarItem } from '../../sidebar.types'
+import type { ISidebarItem } from '../sidebar.types'
 
 interface Props {
 	item: ISidebarItem

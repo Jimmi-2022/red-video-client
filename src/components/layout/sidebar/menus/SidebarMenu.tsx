@@ -1,4 +1,4 @@
-import type { ISidebarItem } from '../../sidebar.types'
+import type { ISidebarItem } from '../sidebar.types'
 
 import { MenuItem } from './MenuItem'
 
@@ -7,7 +7,7 @@ interface Props {
 	menu: ISidebarItem[]
 }
 
-export function SidebarMenu({ title, menu }: Props) {
+export function SidebarMenu({ menu, title }: Props) {
 	return (
 		<nav>
 			{title && <div>{title}</div>}

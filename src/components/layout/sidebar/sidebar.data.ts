@@ -1,10 +1,12 @@
 import {
+	CircleAlert,
 	CirclePlay,
 	Compass,
 	Flame,
 	FolderHeart,
 	Gamepad2,
 	History,
+	Settings,
 	TvMinimalPlay
 } from 'lucide-react'
 
@@ -49,5 +51,18 @@ export const SIDEBAR_DATA: ISidebarItem[] = [
 		label: 'Liked videos',
 		link: PUBLIC_PAGE.LIKED_VIDEOS,
 		isBottomBorder: true
+	}
+]
+
+export const MORE_SIDEBAR_DATA: ISidebarItem[] = [
+	{
+		icon: Settings,
+		label: 'Settings',
+		link: PUBLIC_PAGE.SETTINGS
+	},
+	{
+		icon: CircleAlert,
+		label: 'Send feedback',
+		link: PUBLIC_PAGE.FEEDBACK
 	}
 ]
