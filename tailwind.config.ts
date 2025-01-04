@@ -1,8 +1,9 @@
 import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
 
 import { COLORS } from './src/constants/colors.constants'
 
-export default {
+const config: Config = {
 	content: ['./src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
 	theme: {
 		extend: {
@@ -18,5 +19,18 @@ export default {
 			}
 		}
 	},
-	plugins: []
-} satisfies Config
+	plugins: [
+		plugin(function ({ addUtilities }) {
+			addUtilities({
+				'.line-clamp-2': {
+					display: '-webkit-box',
+					'webkit-line-clamp': 2,
+					'webkit-box-orient': 'vertical',
+					overflow: 'hidden',
+					'text-overflow': 'ellipsis'
+				}
+			})
+		})
+	]
+}
+export default config
