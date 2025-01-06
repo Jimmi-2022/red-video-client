@@ -19,7 +19,7 @@
     "react": "^19.0.0-rc-4f604941-20240830",
     "react-dom": "^19.0.0-rc-4f604941-20240830",
     "sass": "^1.77.8",
-    "tailwind-merge": "^2.6.0"
+    "tailwind-merge": "^2.5.3"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",

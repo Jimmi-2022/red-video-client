@@ -24,7 +24,7 @@ export function SearchPage() {
 				isH1
 				Icon={Search}
 			>
-				Search by &quot;{searchParams.get('term')}&quot;
+				Search &quot;{searchParams.get('term')}&quot;
 			</Heading>
 			<div className='grid grid-cols-6 gap-6'>
 				{isLoading ? (
@@ -40,7 +40,7 @@ export function SearchPage() {
 						/>
 					))
 				) : (
-					<p>No videos found!</p>
+					<p>Videos not found!</p>
 				)}
 			</div>
 		</section>

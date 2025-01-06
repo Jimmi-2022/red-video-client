@@ -8,7 +8,6 @@ class PublicPage {
 	HISTORY = '/history'
 	LIKED_VIDEOS = '/liked-videos'
 
-	SETTINGS = '/settings'
 	FEEDBACK = '/feedback'
 
 	VIDEO(path: string) {

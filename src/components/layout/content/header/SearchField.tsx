@@ -10,7 +10,7 @@ export function SearchField({}: Props) {
 	const router = useRouter()
 
 	const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-		if (e.key === 'Enter') return
+		if (e.key !== 'Enter') return
 		e.preventDefault()
 		if (searchTerm.trim() !== '') {
 			router.push(PAGE.SEARCH(searchTerm))

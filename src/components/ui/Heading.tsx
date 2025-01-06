@@ -9,7 +9,7 @@ interface Props {
 
 export function Heading({ children, Icon, isH1 = false }: Props) {
 	return (
-		<div className='flex items-center gap-1.5 opacity-90 mb-5'>
+		<div className='flex items-center gap-1.5 opacity-90 mb-4'>
 			{Icon && <Icon className='text-primary' />}
 			{isH1 ? (
 				<h1 className='font-semibold text-lg'>{children}</h1>

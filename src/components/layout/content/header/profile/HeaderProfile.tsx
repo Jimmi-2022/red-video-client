@@ -9,10 +9,10 @@ export function HeaderProfile() {
 			href={STUDIO_PAGE.SETTINGS}
 			className='shrink-0'
 		>
-			{/*TODO: Add avatar*/}
+			{/* TODO: AUTH AVATAR */}
 			<Image
 				src='/uploads/avatars/redgroup.jpg'
-				alt='avatar'
+				alt=''
 				width={40}
 				height={40}
 				className='rounded-lg'

@@ -12,7 +12,7 @@ export const dynamic = 'force-static'
 
 export const metadata: Metadata = {
 	title: 'Home',
-	description: 'Best app for video watching',
+	description: 'Best video platform',
 	alternates: {
 		canonical: '/'
 	},
@@ -32,7 +32,7 @@ export default async function Home() {
 			<section className='mb-10'>
 				<Heading Icon={Flame}>Trending</Heading>
 				<div className='grid grid-cols-6 gap-6'>
-					{trendingVideos.length &&
+					{!!trendingVideos.length &&
 						trendingVideos.map(video => (
 							<VideoItem
 								key={video.id}
