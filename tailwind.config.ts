@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import plugin from 'tailwindcss/plugin'
 
 import { COLORS } from './src/constants/colors.constants'
 
@@ -18,19 +17,6 @@ const config: Config = {
 				DEFAULT: '333ms'
 			}
 		}
-	},
-	plugins: [
-		plugin(function ({ addUtilities }) {
-			addUtilities({
-				'.line-clamp-2': {
-					display: '-webkit-box',
-					'webkit-line-clamp': 2,
-					'webkit-box-orient': 'vertical',
-					overflow: 'hidden',
-					'text-overflow': 'ellipsis'
-				}
-			})
-		})
-	]
+	}
 }
 export default config

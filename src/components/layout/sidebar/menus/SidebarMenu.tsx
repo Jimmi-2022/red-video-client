@@ -12,11 +12,10 @@ interface Props {
 
 export function SidebarMenu({ menu, title }: Props) {
 	const pathname = usePathname()
-	console.log(pathname === '/')
 
 	return (
 		<nav>
-			{title && <div className='opacity-40 font-medium uppercase text-xs mb-3'>{title}</div>}
+			{title && <div className='opacity-40 uppercase font-medium text-xs mb-3'>{title}</div>}
 			<ul>
 				{menu.map(menuItem => (
 					<MenuItem

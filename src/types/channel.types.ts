@@ -8,7 +8,7 @@ export interface IChannel {
 	isVerified: boolean
 	avatarUrl: string
 	bannerUrl: string
-	//user:
+	// user:
 	videos: IVideo[]
 	subscribers: []
 	createdAt: string

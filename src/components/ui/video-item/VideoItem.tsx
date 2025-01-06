@@ -4,7 +4,8 @@ import Link from 'next/link'
 
 import { PAGE } from '@/config/public-page.config'
 
-import { transformDate, transformViews } from '@/utils/transform-views'
+import { transformDate } from '@/utils/transform-date'
+import { transformViews } from '@/utils/transform-views'
 
 import type { IVideo } from '@/types/video.types'
 
@@ -53,7 +54,7 @@ export function VideoItem({ video, Icon }: Props) {
 					<span className='text-gray-400 text-xs'>{transformDate(video.createdAt)}</span>
 				</div>
 			</div>
-			<div className='mb-1 leading-tight'>
+			<div className='mb-1'>
 				<Link
 					href={PAGE.VIDEO(video.slug)}
 					className='line-clamp-2 leading-[1.3]'
@@ -67,12 +68,14 @@ export function VideoItem({ video, Icon }: Props) {
 					className='flex items-center gap-1'
 				>
 					<span className='text-gray-400 text-sm'>{video.channel.name}</span>
-					<span>
-						<BadgeCheck
-							className='text-green-500'
-							size='15'
-						/>
-					</span>
+					{video.channel.isVerified && (
+						<span>
+							<BadgeCheck
+								className='text-green-500'
+								size={15}
+							/>
+						</span>
+					)}
 				</Link>
 			</div>
 		</div>

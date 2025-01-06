@@ -9,11 +9,12 @@ export function SidebarHeader({ toggleSidebar }: { toggleSidebar: () => void }) 
 	return (
 		<div className='flex items-center gap-6 mb-12'>
 			<button
+				className='opacity-85 hover:opacity-100 transition-opacity'
 				onClick={toggleSidebar}
-				className='opacity-60 hover:opacity-100 transition-opacity'
 			>
 				<Menu />
 			</button>
+
 			<Link
 				href={PAGE.HOME}
 				className='flex items-center gap-1.5'

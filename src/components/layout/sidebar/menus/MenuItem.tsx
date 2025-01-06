@@ -21,7 +21,10 @@ export function MenuItem({ item, isActive }: Props) {
 					})}
 				/>
 				<span
-					className={cn('border-b', { 'border-white': isActive, 'border-transparent': !isActive })}
+					className={cn('border-b', {
+						'border-white': isActive,
+						'border-transparent': !isActive
+					})}
 				>
 					{item.label}
 				</span>
