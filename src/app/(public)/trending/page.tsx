@@ -6,6 +6,8 @@ import { VideoItem } from '@/ui/video-item/VideoItem'
 
 import { PAGE } from '@/config/public-page.config'
 
+import { videoService } from '@/services/video.service'
+
 export const revalidate = 100
 export const dynamic = 'force-static'
 

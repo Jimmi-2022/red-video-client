@@ -4,6 +4,7 @@ import type { IVideo } from '@/types/video.types'
 
 class VideoService {
 	private _VIDEOS = '/videos'
+
 	getAll(searchTerm?: string | null) {
 		return axiosClassic.get<IVideo[]>(
 			this._VIDEOS,
