@@ -22,7 +22,14 @@ export function VideoItem({ video, Icon }: Props) {
 				scale: 1.03,
 				y: -5
 			}}
-			transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+			transition={{
+				// пружина
+				type: 'spring',
+				// жесткость
+				stiffness: 500,
+				// демпфирование
+				damping: 30
+			}}
 		>
 			<div className='relative mb-1.5'>
 				<Link href={PAGE.VIDEO(video.slug)}>

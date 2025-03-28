@@ -9,7 +9,7 @@ export function Logo() {
 	return (
 		<Link
 			href={PAGE.HOME}
-			className='flex items-center gap-1.5'
+			className='inline-flex items-center gap-1.5'
 		>
 			<SquarePlay
 				color={COLORS.primary}
