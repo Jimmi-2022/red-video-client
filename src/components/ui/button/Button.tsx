@@ -8,7 +8,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 export function Button({ children, isLoading, ...props }: Props) {
 	return (
 		<button
-			className='py-2 px-6 bg-primary text-white font-semibold rounded hover:bg-red-400 transition-colors disabled:bg-grey-400'
+			className='py-2 px-10 bg-primary text-white font-semibold rounded hover:bg-red-400 transition-colors disabled:bg-grey-400'
 			disabled={isLoading || props.disabled}
 			{...props}
 		>
